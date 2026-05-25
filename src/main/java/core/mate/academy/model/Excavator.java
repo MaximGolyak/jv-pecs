@@ -8,11 +8,6 @@ public class Excavator extends Machine {
     private int loadCapacity;
     private int diggingDepth;
 
-    public Excavator(int loadCapacity, int radiusWheels) {
-        this.loadCapacity = loadCapacity;
-        this.diggingDepth = diggingDepth;
-    }
-
     public Excavator() {
     }
 
