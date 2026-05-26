@@ -11,6 +11,22 @@ public class Truck extends Machine {
     public Truck() {
     }
 
+    public int getLengthCapacity() {
+        return lengthCapacity;
+    }
+
+    public void setLengthCapacity(int lengthCapacity) {
+        this.lengthCapacity = lengthCapacity;
+    }
+
+    public int getQuantityWheels() {
+        return quantityWheels;
+    }
+
+    public void setQuantityWheels(int quantityWheels) {
+        this.quantityWheels = quantityWheels;
+    }
+
     @Override
     public void doWork() {
         System.out.println("Truck started to work");

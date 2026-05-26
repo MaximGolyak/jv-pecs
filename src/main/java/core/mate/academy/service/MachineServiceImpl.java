@@ -7,11 +7,9 @@ import core.mate.academy.model.Truck;
 import java.util.Collections;
 import java.util.List;
 
-@SuppressWarnings("unchecked")
-
 public class MachineServiceImpl implements MachineService<Machine> {
 
-    //@Override
+    @Override
     public List<Machine> getAll(Class<? extends Machine> type) {
         if (type == Truck.class) {
             return (List<Machine>) (List<?>) new TruckProducer().get();
